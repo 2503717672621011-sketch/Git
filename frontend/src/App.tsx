@@ -14,7 +14,7 @@ export function App() {
   useEffect(() => {
   const timer = setTimeout(async () => {
     try {
-      const response = await fetch("http://localhost:5000/getuser");
+      const response = await fetch("https://git-m7fk.onrender.com/getuser");
 
       if (!response.ok) {
         throw new Error(`HTTP error: ${response.status}`);
